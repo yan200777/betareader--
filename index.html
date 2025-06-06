@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leitura Lucrativa - Beta Reader</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <div class="top-bar">
+      <div class="progress-bar" id="progress-bar"></div>
+      <span class="leads-count">147 pessoas online agora</span>
+    </div>
+    <div class="question-box">
+      <h2 id="question-text">Carregando...</h2>
+      <div class="options">
+        <button class="option" onclick="nextQuestion(1)">Sim</button>
+        <button class="option" onclick="nextQuestion(0)">Não</button>
+      </div>
+    </div>
+    <div class="money-counter">R$ <span id="money">0</span></div>
+    <div class="notif" id="notif">+1 Venda realizada!</div>
+  </div>
+  <audio id="cashSound" src="cash.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
